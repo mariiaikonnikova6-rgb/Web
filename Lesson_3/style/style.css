@@ -1,13 +1,17 @@
-table {border-top: 1px solid black;
-    border-left: 1px dashed black;
-    border-right: 1px dashed black;
-    border-bottom: 1px solid black;}
+table {border-collapse: collapse;
+    background: yellow;
+    border-bottom: black solid 2px;
+    border-top: black solid 2px;
+    border-left: 2px dashed black;
+    border-right: 2px dashed black;}
 
-table {background-color: yellow;}
-
-table,
 td {border: 1px solid black;
+    width: 55px;
+    height: 45px;
     text-align: center;
-    border-collapse: collapse;
+    vertical-align: middle;
+    font-weight: 600;
 }
 
+td.green{ background: lightgreen }
+td.orange{ background: #f4b183; }
