@@ -26,9 +26,11 @@
     display: flex;
     column-gap: 10px;
     align-items: center;
+
+    margin-bottom: 25px;
 }
-.logo img{
-    background: linear-gradient();
+.logo-img{
+    background:  linear-gradient(rgb(173,84, 220), rgb(224,67, 170));
     padding: 15px;
     border-radius: 50%;
 }
@@ -54,42 +56,42 @@
     column-gap: 10px;
 }
 
-.header-button button:hover{
+.header-bottom button:hover{
     background: #f1f1f1;
     border-radius: 5px;
 
 }
-.header-button {
+.header-bottom {
     padding: 130px 0;
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    background: linear-gradient(135deg, #f1f1f1, #f1f1f1, #9b17f8);
+    background: linear-gradient(135deg, #9b17f8, #f8478f, #ff8623);
     color: white;
 }
-.header-button-text {
+.header-bottom-text {
     margin: 0 240px;
     width: 768px;
 }
 
-.header-button-text h1{
+.header-bottom-text h1{
     font-size: 60px;
     font-weight: 500;
     margin-bottom: 24px;
     line-height: 60px;
 }
-.header-button-text p{
+.header-bottom-text p{
     font-size: 20px;
     margin-bottom: 32px;
 }
 
-.header-button-button{
+.header-bottom-button{
     display: flex;
     column-gap: 10px;
 }
 
-.header-button-button button{
+.header-bottom-button button{
     border: none;
     padding: 10px 20px;
     font-size: 14px;
@@ -298,9 +300,40 @@ footer{
 .footer-top{
     display: flex;
     justify-content: center;
-    column-gap: 250px;
+    column-gap: 50px;
 }
 
 .column{
     max-width: 350px;
+}
+
+.products-list{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+
+}
+
+.footer-top.wrapper h3{
+    margin-bottom: 30px;
+
+}
+
+.footer-top.wrapper{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 80px;
+    width: 100%;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #bab1b0;
+    padding: 24px 0;
+}
+
+br{
+    display: none;
+    color: white;
 }
