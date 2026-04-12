@@ -86,6 +86,7 @@ nav ul li a{
 .hero{
     padding: 54px 0;
     text-align: center;
+
 }
 .hero-grid{
     display: grid;
@@ -200,6 +201,7 @@ nav ul li a{
 
 .footer{
     background: #101727;
+    color: #fff;
 
 }
 
@@ -212,5 +214,20 @@ nav ul li a{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 40px;
-    align-items: center;
+
+    align-content: start;
+}
+
+.footer-column{
+    display: grid;
+    grid-row-gap: 5px;
+}
+
+.footer-bottom{
+
+    grid-column: 1 / -1;
+    display: grid;
+    place-items: center;
+    grid-row-gap: 15px;
+    border-top: #5e656f solid 1px;
 }
