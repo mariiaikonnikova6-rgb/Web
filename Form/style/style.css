@@ -1,0 +1,49 @@
+*{
+    font-family: sans-serif;
+}
+
+article{
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    padding: 10px;
+    margin: 10px;
+    background: white;
+    width: 800px;
+}
+
+h1{
+    text-align: center;
+    color: #307ef6;
+}
+
+p{
+    text-align: center;
+}
+
+form{
+    border-radius: 7px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.inf{
+    background: lightskyblue;
+}
+
+.name{
+    background: #d5bae0;
+}
+
+.dodat{
+    background: #bad3e0;
+}
+
+
+button{
+    width: 100%;
+    height: 50px;
+    background: lightskyblue;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+}
