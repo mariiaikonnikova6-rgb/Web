@@ -2,6 +2,12 @@
     font-family: sans-serif;
 }
 
+
+main{
+    display: flex;
+    justify-content: center;
+}
+
 article{
     border: 1px solid #ccc;
     border-radius: 7px;
@@ -24,10 +30,17 @@ form{
     border-radius: 7px;
     margin: 20px;
     padding: 10px;
+    position: relative;
 }
 
 .inf{
     background: lightskyblue;
+    /*display: grid;*/
+    /*grid-template-columns: 1fr 1fr;*/
+    /*column-gap: 1px;*/
+    /*row-gap: 1px;*/
+    /*grid-template-rows: 1fr 1fr;*/
+
 }
 
 .name{
@@ -46,4 +59,61 @@ button{
     outline: none;
     border: none;
     border-radius: 7px;
+}
+
+
+
+
+label1{
+    display: flex;
+    position: relative;
+    border: 1px solid red;
+    width: 400px;
+    justify-content: space-between;
+
+}
+
+.sur label{
+    position: absolute;
+    left: 25px;
+    top: 25px;
+}
+
+label input{
+
+}
+
+form{
+    //display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1px;
+    row-gap: 1px;
+    grid-template-rows: 1fr 1fr;
+}
+
+.row {
+    display: flex;
+    gap: 60px; /* Space between columns */
+
+    padding: 10px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+input,
+textarea {
+    //width: 200px;
+    margin-top: 5px;
+}
+
+h2{
+    margin: 0;
+}
+
+.rad{
+    display: inline;
 }
