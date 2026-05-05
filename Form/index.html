@@ -1,114 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
-  <link rel="stylesheet" href="style/normalize.css">
-  <link rel="stylesheet" href="style/style.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
 <main>
-  <article class="wrapper">
-    <div class="head-form">
-      <h1>Форма прийому на роботу</h1>
-      <p class="it-1-text">ІТ Компанія "TechInnovate"</p>
-      <p class="it-2-text">Поля позначені синьою лінією є обов'язковими для заповнення</p>
-    </div>
+    <article class="wrapper">
+        <div class="head-form">
+            <h1>Форма прийому на роботу</h1>
+            <p class="it-1-text">ІТ Компанія "TechInnovate"</p>
+            <p class="it-2-text">Поля позначені синьою лінією є обов'язковими для заповнення</p>
+        </div>
 
-    <form class="personal-form inf">
-      <div class="row">
-        <h2>Персональні дані</h2>
-      </div>
-      <div class="row">
-        <label>
-          <span>Ім'я</span>
-          <input type="text" name="name" required>
-        </label>
-        <label class="sur">
-          <span>Прізвище</span>
-          <input type="text" name="name" required>
-        </label>
-      </div>
+        <form class="personal-form inf">
+            <div class="row">
+                <h2>Персональні дані</h2>
+            </div>
+            <div class="row">
+                <label>
+                    <span>Ім'я</span>
+                    <input type="text" name="name" placeholder="Введіть ваше ім`я" required>
+                </label>
+                <label class="sur">
+                    <span>Прізвище</span>
+                    <input type="text" name="Surname" placeholder="Введіть ваше прізвище" required>
+                </label>
+            </div>
 
-      <div class="row">
-        <label>
-          <span>Email</span>
-          <input type="email" name="Email" required>
-        </label>
-        <label>
-          <span>Телефон</span>
-          <input type="text" name="phone" required>
-        </label>
-      </div>
-    </form>
+            <div class="row">
+                <label>
+                    <span>Email</span>
+                    <input type="email" name="Email" placeholder="example@email.com" required>
+                </label>
+                <label>
+                    <span>Телефон</span>
+                    <input type="text" name="phone" placeholder="+380 XX XXX XX XX" required>
+                </label>
+            </div>
+        </form>
 
-    <form class="personal-form name" action="">
-      <h2>Професійна інформація</h2>
-      <label>
-        <span>Бажана позиція</span>
-        <select name="position" required>
-          <option>Frontend Developer</option>
-          <option>Backend Developer</option>
-          <option>Full Stack Developer</option>
-          <option>QA Engineer</option>
-          <option>UI/UX Designer</option>
-          <option>Mobile Developer</option>
-          <option>Data Scientist</option>
-        </select>
-      </label>
-      <label>
-        <span>Досвід роботи (років)</span>
-        <input type="number" min="0" max="100" required>
-      </label>
-      <label class="Technologies">Технології та навички
-        <input type="text" placeholder="React, Typescript, Node.js, Python" required>
-      </label>
+        <form class="personal-form name" action="">
+            <div class="row"><h2>Професійна інформація</h2>
+            </div>
+            <div class="row">
+                <label>
+                    <span>Бажана позиція</span>
+                    <select name="position" required>
+                        <option>Frontend Developer</option>
+                        <option>Backend Developer</option>
+                        <option>Full Stack Developer</option>
+                        <option>QA Engineer</option>
+                        <option>UI/UX Designer</option>
+                        <option>Mobile Developer</option>
+                        <option>Data Scientist</option>
+                    </select>
+                </label>
+                <label>
+                    <span>Досвід роботи (років)</span>
+                    <input type="number" min="0" max="50" placeholder="0-50" required>
+                </label>
+            </div>
+            <div class="row">
+                <label class="Technologies">Технології та навички
+                    <input type="text" placeholder="React, Typescript, Node.js, Python" required>
+                </label>
+            </div>
+        </form>
+
+        <form class="personal-form dodat" action="">
+            <div class="row"><h2>Додаткова інформація</h2></div>
+            <div class="row">
+                <label>
+                    <span>GitHub профіль</span>
+                    <input type="text" name="name" placeholder="https://github.com/username" required>
+                </label>
+            </div>
+            <div class="row">
+                <label>
+                    <span>Портфоліо</span>
+                    <input type="text" name="name" placeholder="https://yourportfolio.com" required>
+                </label>
+
+            </div>
+            <div class="row">
+                <label>
+                    <span>Резюме (PDF, DOC)</span>
+                    <input type="file" class="choose" placeholder="Choose File No file chosen" required>
+                </label>
+            </div>
+            <div class="row">
+                <label>
+                    <span>Коротко про себе</span>
+                    <textarea class ="checksub" placeholder="Розкажіть про свій досвід, мотивацію  та чому ви хочете приєднатися до нашої команди...(мінімум 50 символів)"></textarea>
+                </label>
+            </div>
+
+        </form>
+
+        <form class="personal-form sub" action="">
+                <label class="rad">
+                    <span>Я даю згоду на обробку персональних даних та підтверджую, що вся надана інформація є достовірною</span>
+                    <input type="checkbox" name="submit" required>
+                </label>
+        </form>
+        <form class="personal-form act" action="">
+            <label>
+                <button type="submit">Надіслати заявку</button>
+            </label>
+        </form>
+        <div class="bottom-form">
+            <div>💡<span>Підказки по заповненню:</span></div>
+            <div>✓ Зелена рамка — поле заповнено правильно</div>
+            <div>✗ Червона рамка — поле заповнено неправильно</div>
+            <div>→ Синя лінія зліва — обов'язкове поле</div>
+            <div>↗ Наведіть курсор на поле для ефекту підсвічування</div>
+        </div>
 
 
-
-
-
-    </form>
-    <form class="personal-form dodat" action="">
-      <h2>Додаткова інформація</h2>
-      <label>
-        <span>GitHub профіль</span>
-        <input type="text" name="name" placeholder="https://github.com/username" required>
-      </label>
-      <label>
-        <span>Портфоліо</span>
-        <input type="text" name="name" placeholder="https://yourportfolio.com" required>
-      </label>
-      <label>
-        <span>Резюме (PDF, DOC)</span>
-        <input type="file" placeholder="Choose File No file chosen" required>
-      </label>
-      <label>
-        <span>Коротко про себе</span>
-        <textarea  required></textarea>
-      </label>
-    </form>
-    <form class="personal-form sub" action="">
-      <label class="rad">
-        <span>Я даю згоду на обробку персональних даних та підтверджую, що вся надана інформація є достовірною</span>
-        <input type="radio" name="submit" required>
-      </label>
-    </form>
-    <form class="personal-form act" action="">
-      <label>
-        <button type="submit">Надіслати заявку</button>
-      </label>
-    </form>
-    <div class="bottom-form">
-      <div>💡<span>Підказки по заповненню:</span></div>
-      <div>✓ Зелена рамка — поле заповнено правильно</div>
-      <div>✗ Червона рамка — поле заповнено неправильно</div>
-      <div>→ Синя лінія зліва — обов'язкове поле</div>
-      <div>↗ Наведіть курсор на поле для ефекту підсвічування</div>
-    </div>
-
-
-  </article>
+    </article>
 </main>
 </body>
 </html>
